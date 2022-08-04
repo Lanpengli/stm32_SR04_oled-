@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build",
+			"command": "make",
+			
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				//"isDefault": true
+			},
+			
+		},
+		{
+			"type": "shell",
+			"label": "Build & update",
+			"command": "openocd",
+			"args": [
+				"-f",
+				"C:/LOAD/openocd_11/share/openocd/scripts/interface/stlink.cfg",
+			
+				"-f",
+				"C:/LOAD/openocd_11/share/openocd/scripts/target/stm32f1x.cfg",
+				"-c", 
+				"program build/TEMPLETE.elf  verify reset exit"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				//"isDefault": true
+			},
+			
+		},
+		{
+			"type": "shell",
+			"label": "Reset",
+			"command": "make reset",
+			
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				//"isDefault": true
+			},
+			
+		}
+	]
+}

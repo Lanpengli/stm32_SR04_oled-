@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Administrator/Documents/F103_BINK/Inc/",
+                "C:/Users/Administrator/Documents/F103_BINK/Drivers/STM32F1xx_HAL_Driver/Inc/",
+                "C:/Users/Administrator/Documents/F103_BINK/Drivers/CMSIS/Device/ST/STM32F1xx/Include/",
+                "C:/Users/Administrator/Documents/F103_BINK/Drivers/CMSIS/Core/Include/"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__CC_ARM",
+                "USE_HAL_DRIVER",
+                "STM32F103xB"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "compilerPath": "C:/LOAD/mingw64/bin/gcc.exe"
+        }
+    ],
+    "version": 4
+}
